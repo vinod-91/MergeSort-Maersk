@@ -1,7 +1,7 @@
 MergeSort WebAPI Implementation
 
 This sample demonstrates how to run MergeSort WebAPI solution. It works on Windows, macOS and Linux.
-You must have .NET Core 2.1 or higher installed.
+You must have .NET Core 2.2 or higher installed.
 
 Getting the sample
 
