@@ -29,13 +29,13 @@ namespace TechnicalChallenge.MergeSort
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc(options => options.EnableEndpointRouting = true).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddMemoryCache();
             services.AddTransient<IMergeSortCaching, MergeSortCaching>();
             services.AddTransient<IMergeSortOperation, MergeSortOperation>();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new Info { Title = "HERC Telematics API", Version = "v1" });
+                c.SwaggerDoc("v1", new Info { Title = "Mergesort API", Version = "v1" });
             });
         }
 

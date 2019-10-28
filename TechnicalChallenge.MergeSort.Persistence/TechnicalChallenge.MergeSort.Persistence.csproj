@@ -6,9 +6,11 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TechnicalChallenge.MergeSort.Infrastructure\TechnicalChallenge.MergeSort.Infrastructure.csproj" />
     <ProjectReference Include="..\TechnicalChallenge.MergeSort.Models\TechnicalChallenge.MergeSort.Models.csproj" />
   </ItemGroup>
 

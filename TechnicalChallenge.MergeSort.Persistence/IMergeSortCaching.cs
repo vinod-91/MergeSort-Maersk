@@ -1,16 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using TechnicalChallenge.MergeSort.Models;
 
 namespace TechnicalChallenge.MergeSort.Persistence
 {
     public interface IMergeSortCaching
     {
-        void AddSortCache(Execution job);
+        Task<ExecutionTracker> AddSortCache(Execution job);
 
-        Executions Get();
+        Task UpdateSortCache(Execution job);
 
-        Execution GetById(int id);
+        Task<Executions> Get();
+
+        Task<Execution> GetById(int id);
     }
 }

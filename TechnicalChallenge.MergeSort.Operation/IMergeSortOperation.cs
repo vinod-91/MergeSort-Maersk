@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using TechnicalChallenge.MergeSort.Models;
 
 namespace TechnicalChallenge.MergeSort.Operation
 {
     public interface IMergeSortOperation
     {
-        void MergeSort(int[] intArrays);
+        Task<ExecutionTracker> MergeSort(int[] intArrays);
 
-        Executions Get();
+        Task<Executions> Get();
 
-        Execution GetById(int id);
+        Task<Execution> GetById(int id);
     }
 }

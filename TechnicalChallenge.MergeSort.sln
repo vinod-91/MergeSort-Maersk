@@ -1,17 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.645
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29326.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalChallenge.MergeSort", "TechnicalChallenge.MergeSort\TechnicalChallenge.MergeSort.csproj", "{73459088-C04A-45A7-BBBB-16E53B284D50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnicalChallenge.MergeSort", "TechnicalChallenge.MergeSort\TechnicalChallenge.MergeSort.csproj", "{73459088-C04A-45A7-BBBB-16E53B284D50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalChallenge.MergeSort.Operation", "TechnicalChallenge.MergeSort.Operation\TechnicalChallenge.MergeSort.Operation.csproj", "{2E67CB5A-57B7-476A-A93B-39367498AFCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnicalChallenge.MergeSort.Operation", "TechnicalChallenge.MergeSort.Operation\TechnicalChallenge.MergeSort.Operation.csproj", "{2E67CB5A-57B7-476A-A93B-39367498AFCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalChallenge.MergeSort.Persistence", "TechnicalChallenge.MergeSort.Persistence\TechnicalChallenge.MergeSort.Persistence.csproj", "{04F8380F-A669-43E5-9911-2AF9F44650BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnicalChallenge.MergeSort.Persistence", "TechnicalChallenge.MergeSort.Persistence\TechnicalChallenge.MergeSort.Persistence.csproj", "{04F8380F-A669-43E5-9911-2AF9F44650BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalChallenge.MergeSort.UnitTest", "TechnicalChallenge.MergeSort.UnitTest\TechnicalChallenge.MergeSort.UnitTest.csproj", "{6E5AAB00-7159-42E6-A736-733054D72CF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnicalChallenge.MergeSort.UnitTest", "TechnicalChallenge.MergeSort.UnitTest\TechnicalChallenge.MergeSort.UnitTest.csproj", "{6E5AAB00-7159-42E6-A736-733054D72CF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalChallenge.MergeSort.Models", "TechnicalChallenge.MergeSort.Models\TechnicalChallenge.MergeSort.Models.csproj", "{19EB7EBD-0F54-47FA-95A8-5B64287C5D2F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechnicalChallenge.MergeSort.Models", "TechnicalChallenge.MergeSort.Models\TechnicalChallenge.MergeSort.Models.csproj", "{19EB7EBD-0F54-47FA-95A8-5B64287C5D2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechnicalChallenge.MergeSort.Infrastructure", "TechnicalChallenge.MergeSort.Infrastructure\TechnicalChallenge.MergeSort.Infrastructure.csproj", "{DBB158F1-6417-4FF9-807E-1095A1090417}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{19EB7EBD-0F54-47FA-95A8-5B64287C5D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19EB7EBD-0F54-47FA-95A8-5B64287C5D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19EB7EBD-0F54-47FA-95A8-5B64287C5D2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBB158F1-6417-4FF9-807E-1095A1090417}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBB158F1-6417-4FF9-807E-1095A1090417}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBB158F1-6417-4FF9-807E-1095A1090417}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBB158F1-6417-4FF9-807E-1095A1090417}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

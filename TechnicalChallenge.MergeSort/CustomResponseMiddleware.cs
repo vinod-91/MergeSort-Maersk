@@ -77,12 +77,12 @@ namespace TechnicalChallenge.MergeSort
             catch (Exception ex)
             {
                 _logger.LogInformation($"Exception - {ex}");
-                context.Response.StatusCode = 500;
+                context.Response.StatusCode = 512;
                 if (!context.Response.HasStarted)
                 {
                     context.Response.Body = originalBodyStream;
-                    string errorMessage = "An error has occured.";
-                    var formattedResponse = FormatResponse(errorMessage, context.Response.StatusCode, "Error");
+                    string errorMessage = ex.Message;
+                    var formattedResponse = FormatErrorResponse(errorMessage, context.Response.StatusCode, "Error");
                     await UpdateHttpReponseContext(context, formattedResponse);
                 }
             }
@@ -119,6 +119,12 @@ namespace TechnicalChallenge.MergeSort
         {
             var result = JsonConvert.DeserializeObject<object>(responseText);
             var apiResponse = new APIResponse { StatusCode = statusCode, Message = message, Payload = result };
+            return apiResponse;
+        }
+
+        private APIResponse FormatErrorResponse(string errorMessage, int statusCode, string message)
+        {
+            var apiResponse = new APIResponse { StatusCode = statusCode, Message = message, Payload = errorMessage };
             return apiResponse;
         }
 

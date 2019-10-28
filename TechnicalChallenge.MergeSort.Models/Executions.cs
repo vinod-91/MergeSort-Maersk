@@ -8,14 +8,18 @@ namespace TechnicalChallenge.MergeSort.Models
         public List<Execution> execution { get; set; }
     }
 
-    public class Execution
+    public class Execution: ExecutionTracker
     {
-        public int Id { get; set; }
-        public string TimeStamp { get; set; }
+        public int TimeStamp { get; set; }
         public long Duration { get; set; }
-        public JobStatus Status { get; set; }
         public int[] Input { get; set; }
         public int[] Output { get; set; }
+    }
+
+    public class ExecutionTracker
+    {
+        public int Id { get; set; }
+        public string Status { get; set; }
     }
 
     public enum JobStatus

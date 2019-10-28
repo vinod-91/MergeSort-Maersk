@@ -18,21 +18,19 @@ namespace TechnicalChallenge.MergeSort.Controllers
             _mergeSortOperation = mergeSortOperation;
         }
         [HttpPost]
-        public void Post([FromBody] int[] input)
+        public async Task<ExecutionTracker> Post([FromBody] int[] input)
         {
-            _mergeSortOperation.MergeSort(input);
+            return await _mergeSortOperation.MergeSort(input);
         }
-        [ActionName("GetAllExecution")]
         [HttpGet]
-        public Executions Get()
+        public async Task<Executions> Executions()
         {
-            return _mergeSortOperation.Get();
+            return await _mergeSortOperation.Get();
         }
-        [ActionName("GetExecutionById")]
         [HttpGet]
-        public Execution GetById(int id)
+        public async Task<Execution> ExecutionsById(int id)
         {
-            return _mergeSortOperation.GetById(id);
+            return await _mergeSortOperation.GetById(id);
         }
     }
 }
